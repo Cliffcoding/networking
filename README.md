@@ -10,6 +10,6 @@ ssh student@10.50.39.80 -X
 
 Teardrop attack. Altering the Offset of a fragmented packet, where the attacker can replace 
 
-ipv4 169
-
-ipv6 fe80
+```python
+sendp(a/b, iface="eth0"); sendp(a/c, iface="eth0")
+```

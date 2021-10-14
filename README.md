@@ -21,7 +21,7 @@ a.type= 0x0806
 sendp(a/b, iface="eth0"); sendp(a/c, iface="eth0")
 ```
 ## Sockets
-
+echo "I am the captain of deese sheep" | nc -l -p 54321 -u
 ```python
 
 import socket

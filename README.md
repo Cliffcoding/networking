@@ -1,10 +1,12 @@
 # Networking
 
 http://networking-ctfd-1.server.vta:8000/
+
 https://git.cybbh.space/net/public/-/blob/master/modules/networking/activities/1-Fundamentals/BPF_Syntax_Examples/bpf-syntax.adoc
+
 https://miro.com/app/board/o9J_klSqCSY=/ 
 
-ssh student@10.50.39.80 -X
+ssh student@10.50.41.139 -X
 
 ## Day 1
 
@@ -42,6 +44,6 @@ kernel-space:
 * raw- handcrafted packets 
 
 #### Scripts
-```python
+``` python
     
 ```

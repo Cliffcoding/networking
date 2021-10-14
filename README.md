@@ -20,14 +20,20 @@ sendp(a/b, iface="eth0"); sendp(a/c, iface="eth0")
 ```
 ## Sockets
 
-`import socket
-s = socket.socket(family, type, protocol)
-`
-family constants should be: AF_INET (default), AF_INET6, AF_UNIX
-SOCK_STREAM (default), SOCK_DGRAM, SOCK_RAW
-proto constants should be: 0 (default), IPPROTO_RAW
 ```python
+
+import socket
+s = socket.socket(family, type, protocol)
+
 ```
+
+family constants should be: AF_INET (default), AF_INET6, AF_UNIX
+
+SOCK_STREAM (default), SOCK_DGRAM, SOCK_RAW
+
+proto constants should be: 0 (default), IPPROTO_RAW
+
+
 #### Types
 user-space:
 * stream- TCP

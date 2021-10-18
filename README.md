@@ -47,3 +47,15 @@ kernel-space:
 ``` python
     
 ```
+
+#### Recon
+1. Host discovery
+2. Port discovery
+3. port validation / banner grabbing
+    * 22/23 - connect to
+    * 21/80 wget / curl
+##### PAssive recon
+* ip a 
+* netstat
+* hostname
+* who

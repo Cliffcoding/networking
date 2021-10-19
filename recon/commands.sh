@@ -1,4 +1,10 @@
 #!/bin/bash
+ip neigh
+ip a
+find / -iname "*.txt" 2> /dev/null | egrep -i "h[li]nt|f[1l][@4a][69g]"
+find / -iname "*.pcap" 2> /dev/null
+
+whereis nc wireshark 
 sudo nmap -sS 172.16.32.2
 
 sudo hping3 172.16.32.2 -S -V -p 443
@@ -51,28 +57,45 @@ nmap -sM ip1
 nmap -PO ip1
 
 #ICMP discovery probe
- nmap -PE ip1
+nmap -PE ip1
 
- #Timestamp 
- nmap -Pp
+#Timestamp 
+nmap -Pp
 
- #netmask request
+#netmask request
 
- nmap -PM -Pn ip
+nmap -PM -Pn ip
 
- #TCP syn
- nmap -PS21-50 ip 
+#TCP syn
+nmap -PS21-50 ip 
 
- #TCP ack
- nmap -PA21-50
- hping3 -c 1 -V -p 80 -s 5050 -A ip
+#TCP ack
+nmap -PA21-50
+hping3 -c 1 -V -p 80 -s 5050 -A ip
 
- #UDP
- nmap -PU21-50 ip
+#UDP
+nmap -PU21-50 ip
 
- #SCTCP
- nmap -sY
+#SCTCP
+nmap -sY
 
+nc -zv ip 443
+
+#Banner grabber
+echo "" | nc -zvw1 ip port
+
+#UDP banner grabber
+nc -zvwu
+
+#netcat Web content
+printf "GET / HTTP/1.0\r\n\r\n" | nc website 80
+
+wget -r ftp://IP 	#port21 
+wget -r IP 		#port 80
+
+
+
+pcmanfm
 
 
 
